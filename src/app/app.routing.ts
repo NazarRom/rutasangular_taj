@@ -3,7 +3,7 @@ import { CineComponent } from "./components/cine/cine.component";
 import { TelevisionComponent } from "./components/television/television.component";
 import { MusicaComponent } from "./components/musica/musica.component";
 import { Error404Component } from "./components/error404/error404.component";
-
+import { NumerodobleComponent } from "./components/numerodoble/numerodoble.component";
 //necesitampos lo siguiendtes modulos para routing
 import {Routes,RouterModule} from '@angular/router';
 import { ModuleWithProviders} from '@angular/core';
@@ -15,6 +15,8 @@ const appRoutes: Routes = [
     {path: "musica", component:MusicaComponent},
     {path: "cine", component:CineComponent},
     {path: "television",component:TelevisionComponent},
+    {path:"numerodoble",component:NumerodobleComponent},
+    {path:"numerodoble/:numero",component:NumerodobleComponent},
     {path:"**",component:Error404Component}
 ]
  export const appRoutingProviders: any[] = [];
